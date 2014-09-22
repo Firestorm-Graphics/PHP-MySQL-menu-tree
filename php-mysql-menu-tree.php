@@ -37,7 +37,7 @@ foreach($items as $data){
 */
 function createMenuList($menuItems)
 {
-    $html = "";
+    $html = '';
     foreach($menuItems as $k => $v) {
         if(count($v['children']) > 0) {
             $html .= ('
