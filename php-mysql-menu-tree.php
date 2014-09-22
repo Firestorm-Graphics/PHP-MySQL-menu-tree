@@ -67,7 +67,11 @@ function createMenuList($menuItems)
     return $html;
 }
 
-echo '<nav><ul class="menu">'."\r\n";
-    echo createMenuList($menuItems);
-echo '</ul></nav>'; 
+echo ('
+    <nav>
+        <ul class="menu">
+            '.createMenuList($menuItems).'
+        </ul>
+    </nav>
+'); 
 ?>
